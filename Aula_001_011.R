@@ -1,0 +1,10 @@
+rm(list = ls())
+setwd('C:\\users\\jose carmino\\Documents\\Rdados')
+getwd()
+dir()
+carregar <- read.table("Alunos_001.csv",header=T,sep=";",dec=".")
+names(carregar)
+dim(carregar)
+carregar[1,3]; carregar[1:3,]; carregar[1:4,3]
+dados_vitimas <- read.table("Dados_acidentes.txt",header=T,sep=";",dec=".")
+acidentes <- read.table("http://www.standclass.com.br/dados_r/acidentes.txt",header=T,sep=";",dec=".")
